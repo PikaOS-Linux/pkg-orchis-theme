@@ -1,8 +1,9 @@
---- install.sh	2023-02-20 16:05:42.401144194 +0300
-+++ patched-install.sh	2023-03-21 14:56:01.280385839 +0300
+diff '--color=auto' -ru ./Orchis-kde/install.sh ./Orchis-kde2/install.sh
+--- ./Orchis-kde/install.sh	2023-02-20 16:05:42.401144194 +0300
++++ ./Orchis-kde2/install.sh	2023-03-21 14:56:01.280385839 +0300
 @@ -4,21 +4,12 @@
  ROOT_UID=0
- 
+
  # Destination directory
 -if [ "$UID" -eq "$ROOT_UID" ]; then
 -  AURORAE_DIR="/usr/share/aurorae/themes"
@@ -25,6 +26,6 @@
 +  LOOKFEEL_DIR="../debian/orchis-theme-kde/usr/share/plasma/look-and-feel"
 +  KVANTUM_DIR="../debian/orchis-theme-kde/usr/share/Kvantum"
 +  WALLPAPER_DIR="../debian/orchis-theme-kde/usr/share/wallpapers"
- 
+
  THEME_NAME=Orchis
- 
+

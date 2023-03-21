@@ -4,6 +4,7 @@ add-apt-repository https://ppa.pika-os.com
 add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
+sudo apt install -y libsass1 sassc
 git clone https://github.com/vinceliuice/Orchis-kde
 cd ./Orchis-kde
 patch -Np1 -i ../patches/kde.patch
