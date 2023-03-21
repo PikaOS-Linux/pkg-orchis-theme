@@ -12,7 +12,8 @@ patch -Np1 -i ../patches/kde.patch
 cd ../
 git clone https://github.com/vinceliuice/Orchis-theme
 cd ./Orchis-theme
-./install.sh -d ../debian/orchis-theme-gtk/usr/share/themes
+mkdir -p ../debian/orchis-theme-gtk/usr/share/themes
+./install.sh -d ../debian/orchis-theme-gtk/usr/share/themes -t all  --shell 42 --tweaks submenu
 cd ../
 mkdir -p orchis-theme
 cp -rvf ./debian ./orchis-theme/

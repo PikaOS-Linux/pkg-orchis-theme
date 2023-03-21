@@ -1,6 +1,6 @@
-diff '--color=auto' -ru ./Orchis-kde/install.sh ./Orchis-kde2/install.sh
---- ./Orchis-kde/install.sh	2023-02-20 16:05:42.401144194 +0300
-+++ ./Orchis-kde2/install.sh	2023-03-21 14:56:01.280385839 +0300
+diff '--color=auto' -ru a/install.sh b/install.sh
+--- a/install.sh	2023-02-20 16:05:42.401144194 +0300
++++ b/install.sh	2023-03-21 15:21:14.739432957 +0300
 @@ -4,21 +4,12 @@
  ROOT_UID=0
 
