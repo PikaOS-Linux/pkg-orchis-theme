@@ -3,6 +3,9 @@ override_dh_clean:
 	true
 override_auto_dh_clean:
 	true
+override_dh_install:
+	cp -rvf orchis-theme-kde debian/
+	cp -rvf orchis-theme-gtk debian/
 
 %:
 	dh $@
