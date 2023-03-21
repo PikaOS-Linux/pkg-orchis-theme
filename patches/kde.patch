@@ -20,12 +20,12 @@ diff '--color=auto' -ru a/install.sh b/install.sh
 -  KVANTUM_DIR="$HOME/.config/Kvantum"
 -  WALLPAPER_DIR="$HOME/.local/share/wallpapers"
 -fi
-+  AURORAE_DIR="../debian/orchis-theme-kde/usr/share/aurorae/themes"
-+  SCHEMES_DIR="../debian/orchis-theme-kde/usr/share/color-schemes"
-+  PLASMA_DIR="../debian/orchis-theme-kde/usr/share/plasma/desktoptheme"
-+  LOOKFEEL_DIR="../debian/orchis-theme-kde/usr/share/plasma/look-and-feel"
-+  KVANTUM_DIR="../debian/orchis-theme-kde/usr/share/Kvantum"
-+  WALLPAPER_DIR="../debian/orchis-theme-kde/usr/share/wallpapers"
++  AURORAE_DIR="./orchis-theme-kde/usr/share/aurorae/themes"
++  SCHEMES_DIR="./orchis-theme-kde/usr/share/color-schemes"
++  PLASMA_DIR="./orchis-theme-kde/usr/share/plasma/desktoptheme"
++  LOOKFEEL_DIR="./orchis-theme-kde/usr/share/plasma/look-and-feel"
++  KVANTUM_DIR="./orchis-theme-kde/usr/share/Kvantum"
++  WALLPAPER_DIR="./orchis-theme-kde/usr/share/wallpapers"
 
  THEME_NAME=Orchis
 

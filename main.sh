@@ -1,3 +1,5 @@
+#! /bin/bash
+set -e
 # Add dependent repositories
 wget -q -O - https://ppa.pika-os.com/key.gpg | sudo apt-key add -
 add-apt-repository https://ppa.pika-os.com
@@ -9,11 +11,13 @@ git clone https://github.com/vinceliuice/Orchis-kde
 cd ./Orchis-kde
 patch -Np1 -i ../patches/kde.patch
 ./install.sh
+cp -rvf ./orchis-theme-kde ../debian/
 cd ../
 git clone https://github.com/vinceliuice/Orchis-theme
 cd ./Orchis-theme
-mkdir -p ../debian/orchis-theme-gtk/usr/share/themes
-./install.sh -d ../debian/orchis-theme-gtk/usr/share/themes -t all  --shell 42 --tweaks submenu
+mkdir -p ./orchis-theme-gtk/usr/share/themes
+./install.sh -d ./orchis-theme-gtk/usr/share/themes -t all  --shell 42 --tweaks submenu
+cp -rvf ./orchis-theme-gtk ../debian/
 cd ../
 mkdir -p orchis-theme
 cp -rvf ./debian ./orchis-theme/
@@ -23,7 +27,7 @@ cd  orchis-theme
 apt-get build-dep ./ -y
 
 # Build package
-dpkg-buildpackage
+dpkg-buildpackage --no-sign
 
 # Move the debs to output
 cd ../
