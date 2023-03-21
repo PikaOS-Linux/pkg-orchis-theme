@@ -1,0 +1,18 @@
+Source: orchis-theme
+Section: gnome
+Priority: optional
+Maintainer: Ward Nakchbandi <hotrod.master@hotmail.com>
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13), libdebhelper-perl, meson, sassc
+Rules-Requires-Root: no
+
+Package: orchis-theme-gtk
+Architecture: all
+Depends: ${misc:Depends}
+Provides: orchis-theme-gtk3, orchis-theme-gtk4, orchis-theme-gnome-shell
+Description: Orchis is a [Material Design](https://material.io) theme for GNOME/GTK based desktop environments.
+
+Package: orchis-theme-kde
+Architecture: all
+Depends: ${misc:Depends}, kvantum | qt5-style-kvantum
+Description: Orchis themes for kde plasma
