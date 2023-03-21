@@ -1,3 +1,8 @@
 #! /usr/bin/make -f
+override_dh_clean:
+	true
+override_auto_dh_clean:
+	true
+
 %:
 	dh $@
