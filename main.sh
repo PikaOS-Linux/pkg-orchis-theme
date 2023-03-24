@@ -13,6 +13,8 @@ cd ./Orchis-kde
 patch -Np1 -i ../patches/kde.patch
 ./install.sh
 cp -rvf ./orchis-theme-kde ../orchis-theme/
+mkdir -p ../orchis-theme/sddm-theme-orchis/usr/share/sddm/themes/
+cp -rvf sddm/Orchis ../orchis-theme/sddm-theme-orchis/usr/share/sddm/themes/
 cd ../
 #git clone https://github.com/vinceliuice/Orchis-theme
 cd ./Orchis-theme
