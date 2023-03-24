@@ -16,3 +16,8 @@ Package: orchis-theme-kde
 Architecture: all
 Depends: ${misc:Depends}, kvantum | qt5-style-kvantum
 Description: Orchis themes for kde plasma
+
+Package: sddm-theme-orchis
+Architecture: all
+Depends: ${misc:Depends}, kvantum | qt5-style-kvantum
+Description: Orchis themes for sddm

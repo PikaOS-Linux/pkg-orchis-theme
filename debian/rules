@@ -4,8 +4,10 @@ override_dh_clean:
 override_auto_dh_clean:
 	true
 override_dh_install:
+	mkdir -p debian/sddm-theme-orchis/usr/share/sddm/themes/
 	cp -rvf orchis-theme-kde debian/
 	cp -rvf orchis-theme-gtk debian/
+	cp -rvf sddm/Orchis debian/sddm-theme-orchis/usr/share/sddm/themes/
 
 %:
 	dh $@
