@@ -5,9 +5,9 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu:22.04
     container:
-      image: ubuntu:devel
+      image: ubuntu:22.04
       volumes:
         - /proc:/proc
       options: --privileged -it
